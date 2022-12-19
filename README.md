@@ -1,4 +1,4 @@
-# Process-Management
+# Process Management
 The purpose of this project is to manage processes and communication between them.
 
 ## Project Description
