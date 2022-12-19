@@ -12,7 +12,7 @@ The 5 stated features are:
 4. Agreeableness
 5. Neuroticism
 
-In this project, we have a file called [traits.csv](). In each line of this file, 5 numbers are given as integers, which respectively represent the 5 numbers corresponding to the 5 factors mentioned above. We also have a number of csv files (specified with the name ```users-<num>.csv```) and it contains several lines, each line containing 5 numbers that correspond to the 5 factors mentioned above.
+In this project, we have a file called [traits.csv](https://github.com/davoudifatemeh/Process-Management/blob/main/data/traits.csv). In each line of this file, 5 numbers are given as integers, which respectively represent the 5 numbers corresponding to the 5 factors mentioned above. We also have a number of csv files (specified with the name ```users-<num>.csv```) and it contains several lines, each line containing 5 numbers that correspond to the 5 factors mentioned above.
 
 First, an initial process is created. This primary process reads the ```traits.csv``` file and then creates a child process for each line of it by successively calling two system calls ```fork()``` and ```exec()``` and gives it the read line information. Then, each created child process creates a new process for each existing ```users-<num>.csv``` file and gives the line information read from ```traits.csv```, which the primary process gave to this process, to the child process.
 
